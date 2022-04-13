@@ -1,0 +1,4 @@
+name: AdminGroup
+version: “1.0-Beta”
+main: top.blockmc.admingroup.AdminGroup
+authors: [ Lingqi, JiNan ]
