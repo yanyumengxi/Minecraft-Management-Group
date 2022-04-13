@@ -1,0 +1,25 @@
+global-settings:
+  # The Global Settings of This Plugin
+  # The version of the configuration , Please don't modify it at will unless you know what you are doing.
+  config-version: 1.0-Beta
+  # If there is the latest update, we will inform you as soon as possible.
+  auto-update: true
+  # You can choose the language of your region，The default language is zh_CN.
+  language: zh_CN
+datasource:
+  # Enable Database Storage
+  enable: true
+  # DataBase Type. Optional: Mysql、SQLite、Redis
+  type: 'mysql'
+  # DataBase Host
+  host: 'localhost'
+  # DataBase Port
+  port: 3306
+  # DataBase UserName
+  username: 'testet'
+  # DataBase Password
+  password: 'testet'
+  # DataBase Name
+  dbname: 'testet'
+  # Mysql DataBase Read Coding
+  coding: 'UTF-8'
