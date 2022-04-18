@@ -1,6 +1,18 @@
 name: AdminGroup
-version: 1.0-Beta
+version: 1.0.0-beta
 main: com.tucker.admingroup.AdminGroup
 authors: [ Lingqi, JiNan ]
 softdepend:
   - PlaceholderAPI
+commands:
+  admingroup:
+    description: Main Commands
+    usage: /<command>
+    aliases:
+      - ag
+  grc:
+    description: Group Chat
+    usage: /<command>
+    aliases:
+      - groupchat
+      - admingroupchat

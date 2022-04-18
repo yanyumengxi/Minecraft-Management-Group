@@ -5,6 +5,10 @@ import org.bukkit.plugin.Plugin;
 
 import java.sql.*;
 
+/**
+ * Mysql DataBase Operation
+ * @author lingqi
+ */
 public class DataMysql {
 
     private static final Plugin plugin = AdminGroup.getPlugin(AdminGroup.class);

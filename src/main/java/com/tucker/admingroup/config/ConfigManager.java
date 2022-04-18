@@ -1,8 +1,12 @@
 package com.tucker.admingroup.config;
 
+import com.tucker.admingroup.AdminGroup;
 import com.tucker.admingroup.entity.ConfigInfo;
+import org.bukkit.plugin.Plugin;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,10 +16,19 @@ import java.util.List;
  */
 public class ConfigManager {
 
+    private static final Plugin plugin = AdminGroup.getPlugin(AdminGroup.class);
+
     /**
      * Configurations
      */
     public static List<ConfigInfo> configs = new ArrayList<>();
+
+    public static void LoaderCommandFiles() {
+        File file = new File(plugin.getDataFolder(), "/command");
+        if (!file.exists()) {
+            plugin.saveResource("command/examples.json", false);
+        }
+    }
 
     /**
      * Read all contents of the file and save it to the second parameter

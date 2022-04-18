@@ -19,7 +19,7 @@ public class GetPluginInfo {
      * @return {String} Plugin Version
      */
     public static String getVersion() {
-        return "1.0-bate";
+        return "1.0.0-beta";
     }
 
     /**

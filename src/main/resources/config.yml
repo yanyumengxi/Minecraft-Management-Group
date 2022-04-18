@@ -1,25 +1,39 @@
-global-settings:
+settings:
   # The Global Settings of This Plugin
   # The version of the configuration , Please don't modify it at will unless you know what you are doing.
-  config-version: 1.0-Beta
+  config-version: 1.0.0-beta
   # If there is the latest update, we will inform you as soon as possible.
   auto-update: true
   # You can choose the language of your region，The default language is zh_CN.
   language: zh_CN
+  # Enable Custom Command
+  custom-command: true
 datasource:
   # Enable Database Storage
   enable: true
   # DataBase Type. Optional: Mysql、SQLite、Redis
   type: 'mysql'
   # DataBase Host
-  host: 'localhost'
+  host-mysql: 'localhost'
   # DataBase Port
-  port: 3306
+  port-mysql: 3306
   # DataBase UserName
-  username: 'testet'
+  username-mysql: 'testet'
   # DataBase Password
-  password: 'testet'
+  password-mysql: 'testet'
   # DataBase Name
-  dbname: 'testet'
+  dbname-mysql: 'testet'
   # Mysql DataBase Read Coding
-  coding: 'UTF-8'
+  coding-mysql: 'UTF-8'
+  # Redis Server Host
+  host-redis: 'localhost'
+  # Redis Server Port
+  port-redis: 6379
+  # Redis Server Password
+  password-redis: 'testet'
+  # sqlite DB File Save Path. (Support Variable). Example: {%=PluginData=%}(Plugin Data Folder)
+  # be careful: DB File Name Excluding decimal point and suffix. Example: original/: data.db; Now/:data
+  # Is OK?
+  # Last Cannot contain .db
+  # Otherwise, there will be all kinds of wonderful behavior
+  path-sqlite: '{%=PluginData=%}/data/lib/data'
